@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Importing dataset
-dataset = pd.read_csv('Credit_Card_Applications.csv')
+dataset = pd.read_csv('Loan_Applications.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
@@ -41,5 +41,5 @@ show()
 
 # Finding the frauds
 mappings = som.win_map(X)
-frauds = np.concatenate((mappings[(8,1)], mappings[(6,8)]), axis = 0 )
+frauds = np.concatenate((mappings[(3,5)], mappings[(4,5)], mappings[(5,5)]), axis = 0 ) # Concatenate according to the number of winning nodes you want to list
 frauds = sc.inverse_transform(frauds)
