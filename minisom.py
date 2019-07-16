@@ -18,7 +18,7 @@ from numpy.testing import assert_array_equal
 import unittest
 
 """
-    Minimalistic implementation of the Self Organizing Maps (SOM).
+    Minimalistic implementation of the Self Organizing Maps (SOM)
 """
 
 
