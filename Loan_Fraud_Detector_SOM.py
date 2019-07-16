@@ -41,5 +41,5 @@ show()
 
 # Finding the frauds
 mappings = som.win_map(X)
-frauds = np.concatenate((mappings[(3,5)], mappings[(4,5)], mappings[(5,5)]), axis = 0 ) # Concatenate according to the number of winning nodes you want to list
+frauds = np.concatenate((mappings[(3,5)], mappings[(4,5)], mappings[(5,5)]), axis = 0 ) # Concatenate according to the number of winning nodes you want to list 
 frauds = sc.inverse_transform(frauds)
